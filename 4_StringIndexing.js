@@ -19,11 +19,11 @@ console.log(firstName.length)  // it will prit 6 for 6 charectors
 console.log( firstName[firstName.length-1])
 
 
-//<<<<<<<<<<<<<<<<Method to work with string >>>>>>>>>>>>>>>>>>>>>>>>>>
+//<<<<<<<<<<<<<<<< Method to work with string >>>>>>>>>>>>>>>>>>>>>>>>>>
 
 console.log("METHOD OF STRING")
 
-let secondName = "   Jayraj Singh  "
+let secondName = " Jayraj Singh "
 
 // Trim --> This method is use to remove extra spaces
 console.log(secondName)
