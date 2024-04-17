@@ -5,6 +5,7 @@
 // Object Stores Key value Pairs
 //Object do not have indexs
 // Object is Reference type
+// if you take a number as key then key converted in string internally in obejects
 
 
 // how to create an objects
