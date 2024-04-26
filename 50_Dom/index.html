@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" >
+    <!-- <script src="index.js"></script>  -->
+<!-- is tarike  me javaScript link karne me kami hai 
+jab metadata and tiles other link load ho jayega browser me to pahuchega script me aur dekhega ki mujhe
+ek javascript file load karni hai. aur isme hamne body k element like header and dives use kar rakhe hai 
+jo ki abhi tak load nhi hua hai to ye error de dega
+dusra tarika body me sabse last me script tag use kar k link karna
+-->
+    <!-- <script src="index.js" async></script>  -->
+
+    <!-- 
+        browser ko file milegi 
+        browser parse karna start kar dega
+        line by line parse karan suru karega 
+        jab Script tag pe pahuchega
+        ab ye dekhega uha to async laga hua hai 
+        to ye parsing bhi karta rahega aur loading bhi hoti rahegi
+        ab kya hoga ki jab javaScript load ho jayegi poori
+        to browser parsing karna band kar dega aur jaha hai wahi ruk jaega
+        ab browser ka dyan execute hone par rahega
+        ab bhi error ayega kyu ki file hamari puri tarah pars nahi hui hai
+
+     -->
+     <!-- <script src="index.js" defer></script>  -->
+     <!-- 
+        Browser ko milegi HTML file
+        parsing start karega line by line
+        Script pe pahuchega aur dekhega yaha to defer likha hua hai
+        ab parsing aur loading sath sath ho rahi hai
+        but loading hone k bavjud browser poori html file parse karega
+        execute karne k time error nahi ayega sath k sath performance badh jategi
+
+      -->
+
+      <!-- <script src="./1_DOM.js" defer></script> -->
+      <!-- <script src="./2_SelectingElement.js" defer></script> -->
+      <!-- <script src="./3_ChangingText.js" defer></script> -->
+      <!-- <script src="./4_getandsetAttribute.js" defer></script> -->
+      <!-- <script src="./5_classmanupulation.js" defer></script> -->
+      <!-- <script src="./6_woekingwithtodo.js" defer></script> -->
+      <!-- <script src="./7_createElement.js" defer></script> -->
+      <script src="./9_someOldMethod.js" defer></script>
+
+    </head>
+<body>
+
+    <header >
+        <nav class="container nav">
+            <h1 class="logo">webdom</h1>
+            <ul class="nav-items">
+                <li><a class="navs" href="">Todo</a></li>
+                <li><a class="navs" href="">SignUp</a></li>
+                <li><a class="navs" href="">About</a></li>
+
+
+            </ul>
+        </nav>
+        <div class="head-line">
+            <h2 id="main-heading">Manage Your Task!</h2>
+            <button class="btn btn-headline">Learn More...</button>
+        </div>
+    </header>
+    <section class="todo-section container">
+        <h2>Your Plan For Today!</h2>
+        <form action="" class="form-todo">
+            <input type="text" placeholder="Add todo">
+            <input type="submit" value="Add Todo" >
+        </form>
+        <ul class="todo-list">
+            <li>
+                todo 1
+            </li>
+        </ul>
+    </section>
+    
+    <section class="section-signup">
+        <h2>Sign Up</h2>
+        <form action="" class = "signup-form">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" name="username"  id="username" />
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" name="email"  id="email" />
+            </div>
+            <div class="form-group">
+                <label for="phone">phone</label>
+                <input type="text" name="phone"  id="phone" />
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="text" name="password"  id="password" />
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="text" name="confirmPassword"  id="confirmPassword" />
+            </div>
+            <div class="form-group">
+                <label for="about">About Your Self</label>
+                <textarea  name="about"  id="about" cols="30" rows="10" ></textarea>
+            </div>
+            <div class="form-group">
+                
+                <button type="submit" class="btn signup-btn">Submit</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- <script src="index.js"></script>  -->
+<!-- Yaha load bhi hoga aur execute bhi ho jayegi kyu k browser sare html ko load kar chuka hai
+Is tarike me bhi problem hai kyu ki ye kaam synchronously use ho raha hai to load hone me time lag sakta hai
+
+now tisara tarika ye hai ki async use kar lo upar hi
+-->
+</body>
+</html>
